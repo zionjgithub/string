@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    #random {
+      font-size: 17px;
+      color:#03C04A ;
+      font-weight: bold;
+      #03C04A
+    }
+
+    p {
+      color: royalblue;
+      font-weight: bolder;
+      font-size: 20px;
+    }
+
+    h1 {
+      color: royalblue;
+      font-weight: bold;
+    }
+
+    #string {
+
+      color: white;
+      background-color: rgb(244, 67, 67);
+      border-radius: 6px;
+      width: 300px;
+      border: 0.5px solid;
+      padding: 10px 12px;
+      cursor: pointer;
+
+    }
+
+    * {
+      font-family: 'Roboto Slab', serif;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>
+    Random Number
+  </h1>
+  <br>
+  <p>
+    Press this button to generate a random value with variables and numeric character
+  </p>
+  <br>
+  <br>
+  <button onclick="string()" id="string">
+    generate string
+  </button>
+  <br><br>
+  <span id="random">
+
+  </span>
+
+
+
+
+
+
+  <script>
+
+    function string() {
+      var a = Math.random().toString(36).slice(2)
+      document.getElementById("random").innerHTML = a;
+    }
+
+    laptop = {
+      brand: "lenovo",
+      model: 2020,
+      color: "silver",
+      speakers: " DOLBY ATMOS"
+
+    }
+    alert(laptop.color)
+
+    school = {
+      tools: "pencil",
+      level: "middle school",
+      grade: 6,
+      students: 1400,
+
+    }
+    alert(school.tools)
+
+
+
+    console.log(Math.sqrt(16));
+    console.log(Math.sqrt(64));
+
+
+
+
+
+  </script>
+
+
+</body>
+
+</html>
